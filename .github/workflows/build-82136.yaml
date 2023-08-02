@@ -22,6 +22,11 @@ on:
       - '**/*.md'
       - '**/*.gitignore'
       - '**/*.gitattributes'
+    inputs:
+      reason:
+        description: The reason for the manual run
+        required: true
+        type: string
       
 jobs:
   build:
